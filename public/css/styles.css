@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Courier+Prime:wght@700&display=swap');
+
+body{
+  overflow-x:hidden;
+  color:white;
+  height: 100%;
+  font-family:Courier Prime;
+  background-image: url("../images/bg1.png");
+}
+
+/* Image style */
+img{
+  border: 4vw solid black;
+  width:inherit;
+  height: 35vw;
+}
+.saladImg{
+  border-right: none;
+}
+.friesImg{
+  margin-top: 5vw;
+  border-left: none;
+}
+.saladImg2{
+  display: none;
+}
+
+/* Top Tile and subtitle style */
+.top{
+  padding-left: 10vw;
+  width: 100%;
+  overflow: hidden;
+  position:relative;
+  text-align: left;
+}
+.top h1{
+  font-size:12vw;
+  margin-bottom:-4vw;
+  margin-top: 5vw;
+}
+.top p{
+  font-size:4.5vw;
+  margin:0;
+}
+.topRight{
+  padding-top: 5vw;
+  text-align: center;
+  background-color: rgba(100, 255, 0, 0.60);
+}
+.topRight h4{
+  font-size: 2vw;
+  margin: 0;
+}
+
+/* navigation bar style */
+.navbar {
+  float: right;
+  font-size: 2vw;
+  padding:0;
+}
+.navbar a{
+  padding: 0;
+}
+
+/* Main menu  heading style */
+.menuHeadingLeft{
+  margin:2vw 0;
+  padding-left:10vw;
+  text-align: left;
+  font-size:5vw;
+  background-color: rgba(100, 255, 0, 0.60);
+  width: 50%;
+}
+.menuHeadingRight{
+  margin:2vw 0;
+  padding-left:5vw;
+  text-align:left;
+  font-size:5vw;
+  background-color: rgba(100, 255, 0, 0.60);
+}
+
+/* Menu content style */
+section p{
+  margin-top: -1vw;
+  color:silver;
+}
+.starterContent{
+  background-image: url("../images/basket_ball3.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+.starterContent h5,p{
+  margin-left: 10vw;
+  margin-right: 5vw;
+  text-align: justify;
+}
+.saladContent{
+  background-image: url("../images/base_ball3.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: bottom;
+}
+.saladContent p,h5{
+  margin-left:5vw;
+  margin-right: 10vw;
+  text-align: justify;
+}
+.end{
+  margin-bottom:4vw;
+}
+
+/* styling for smaller screen size */
+@media(max-width:990px){
+  .top h1{
+    font-size:13vw;
+  }
+  .menuHeadingLeft,.menuHeadingRight{
+    font-size:7vw;
+  }
+  .saladImg{
+    display:none;
+  }
+  .saladImg2{
+    display:block;
+    border: 4vw solid black;
+    width:80%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .friesImg{
+    border: 4vw solid black;
+    width:80%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top:0;
+  }
+  .menuHeadingLeft{
+    width:100%;
+  }
+  .menuHeadingRight{
+    padding-left:10vw;
+  }
+  .starterContent p,h5{
+    margin-right: 10vw;
+  }
+  .starterContent{
+    background-position: top;
+  }
+  .saladContent{
+    background-position: top;
+  }
+  .saladContent p,h5{
+    margin-left: 10vw;
+  }
+}
